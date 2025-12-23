@@ -4,9 +4,10 @@ import ProductListings from "./ProductListings";
 
 export default function Home() {
   return (
-    <div className="home-container">
-      <PageHeading title="Template App">
-        Refactor this into a Recipe Card App
+    <div className="max-w-6xl mx-auto px-6 py-8">
+      <PageHeading title="Explore My Stickers!">
+        Add a touch of creativity to your space with our wide range of fun and
+        unique stickers. Perfect for any occasion!
       </PageHeading>
       <ProductListings products={products} />
     </div>
