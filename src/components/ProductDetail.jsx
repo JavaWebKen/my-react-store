@@ -24,7 +24,7 @@ export default function ProductDetail() {
     if (quantity < 1) return;
     addToCart(product, quantity);
   };
-  
+
   const handleMouseMove = (e) => {
     const { left, top, width, height } =
       zoomRef.current.getBoundingClientRect();
@@ -107,9 +107,10 @@ export default function ProductDetail() {
             </div>
 
             {/* Add to Cart Button */}
-            <button 
+            <button
               onClick={handleAddToCart}
-              className="w-full px-4 py-2 bg-primary dark:bg-light text-white dark:text-black rounded-md text-lg font-semibold hover:bg-dark dark:hover:bg-lighter transition">
+              className="w-full px-4 py-2 bg-primary dark:bg-light text-white dark:text-black rounded-md text-lg font-semibold hover:bg-dark dark:hover:bg-lighter transition"
+            >
               Add to Cart
               <FontAwesomeIcon icon={faShoppingCart} className="ml-2" />
             </button>
