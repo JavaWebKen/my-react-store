@@ -28,7 +28,7 @@ export default function Header() {
   const toggleUserMenu = () => setUserMenuOpen((prev) => !prev);
 
   const { totalQuantity } = useCart();
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, user, logout } = useAuth();
 
   useEffect(() => {
     if (theme === "dark") {
@@ -73,7 +73,7 @@ export default function Header() {
       <div className="flex items-center justify-between mx-auto max-w-6xl px-6 py-4">
         <Link to="/" className={navLinkClass}>
           <FontAwesomeIcon icon={faTags} className="h-8 w-8" />
-          <span className="font-bold">Eazy Stickers</span>
+          <span className="font-bold">My Stickers</span>
         </Link>
         <nav className="flex items-center py-2 z-10">
           <button
